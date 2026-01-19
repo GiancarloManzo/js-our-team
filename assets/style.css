@@ -1,0 +1,10 @@
+body {
+  font-family: "Fredoka", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(150deg, #769697, #000707);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
