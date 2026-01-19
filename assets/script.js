@@ -40,12 +40,17 @@ const TeamContainer = document.getElementById("team-container");
 
 function createCard(member) {
   return `
-  <div class="team-card">
-  <img src="./${member.img}" alt="${member.name}">
-   <div class="content">
-        <h3>${member.name}</h3>
-        <p>${member.role}</p>
-        <a href="mailto:${member.email}">${member.email}</a>
+ <div class="col-12 col-sm-6 col-md-4">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="./${member.img}" class="card-img-top" alt="${member.name}">
+        
+        <div class="card-body">
+          <h5 class="card-title mb-1">${member.name}</h5>
+          <p class="card-text text-muted mb-2">${member.role}</p>
+          <a href="mailto:${member.email}" class="text-decoration-none">
+            ${member.email}
+          </a>
+        </div>
       </div>
     </div>
   `;
