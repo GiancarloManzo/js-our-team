@@ -50,3 +50,11 @@ function createCard(member) {
     </div>
   `;
 }
+
+let cardsMarkup = "";
+
+for (let i = 0; i < teamMembers.length; i++) {
+  cardsMarkup += createCard(teamMembers[i]);
+}
+
+TeamContainer.innerHTML = cardsMarkup;
